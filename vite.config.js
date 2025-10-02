@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/koine-greek-apk/', // Usa el nombre EXACTO de tu repositorio
+  base: './',  // Cambié esto a './'
   server: {
     port: 3000,
   },
