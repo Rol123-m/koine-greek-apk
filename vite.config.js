@@ -1,11 +1,15 @@
- import { defineConfig } from 'vite'
+import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/koine-greek-apk/', // ¡IMPORTANTE! Esta línea es nueva
+  base: '/koine-greek-apk/', // Usa el nombre EXACTO de tu repositorio
   server: {
     port: 3000,
+  },
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    emptyOutDir: true
   }
 })
