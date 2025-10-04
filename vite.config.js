@@ -3,13 +3,8 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: './',  // Cambié esto a './'
+  base: '/koine-greek-apk/', // ¡IMPORTANTE! Añadir esta línea
   server: {
     port: 3000,
-  },
-  build: {
-    outDir: 'dist',
-    assetsDir: 'assets',
-    emptyOutDir: true
   }
 })
